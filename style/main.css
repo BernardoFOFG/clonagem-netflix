@@ -1,0 +1,100 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--preta);
+  font-family: "Arial", Times, serif;
+  color: white;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  color: var(--vermelho);
+  margin-left: 5px;
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+}
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+header nav a:hover {
+  color: #fff;
+}
+.principal_serie {
+  font-size: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("friends_fundo.jpg");
+  height: 450px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.principal_serie .description {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.title {
+  font-size: 40px;
+}
+.button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+.button.i {
+  margin-right: 8px;
+}
+.container {
+  margin-left: 20px;
+}
+.principal_serie .container {
+  width: 70%;
+}
+.box-filmes {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.carrosel-filmes {
+  margin-top: 5px;
+}
+#divBusca {
+  background-color: #141414;
+  border: solid 2px #000000;
+  border-radius: 10px;
+  width: 300px;
+  height: 32px;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 190px;
+}
